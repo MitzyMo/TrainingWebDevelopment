@@ -1,3 +1,4 @@
+/*General Footer*/ 
 class MnFooter extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

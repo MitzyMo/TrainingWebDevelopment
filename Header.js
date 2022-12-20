@@ -1,3 +1,4 @@
+/*General Header*/ 
 class MnHeader extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = ` 

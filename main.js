@@ -1,4 +1,4 @@
-
+/*General Actions*/ 
 
 window.addEventListener('load', function(){
   var newVideo = document.getElementById('video');
