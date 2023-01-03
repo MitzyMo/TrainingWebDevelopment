@@ -13,8 +13,10 @@ window.addEventListener('load', function(){
 });
 
 /* Carrousel Actions*/
+
+"use strict";
 // Select all slides
-const slides = document.querySelectorAll("slide");
+const slides = document.querySelectorAll('.slide');
 
 // loop through slides and set each slides translateX
 slides.forEach((slide, indx) => {
@@ -22,15 +24,17 @@ slides.forEach((slide, indx) => {
 });
 
 // select next slide button
-const nextSlide = document.querySelector("btn-next");
-
+const nextSlide = document.querySelector('.btn-next');
+console.log(slides);
+console.log(nextSlide);
 // current slide counter
 let curSlide = 0;
 // maximum number of slides
 let maxSlide = slides.length - 1;
 
 // add event listener and navigation functionality
-nextSlide.addEventListener("click", function () {
+nextSlide.addEventListener('click', function () {
+
   // check if current slide is the last and reset current slide
   if (curSlide === maxSlide) {
     curSlide = 0;
@@ -45,10 +49,10 @@ nextSlide.addEventListener("click", function () {
 });
 
 // select next slide button
-const prevSlide = document.querySelector("btn-prev");
+const prevSlide = document.querySelector('.btn-prev');
 
 // add event listener and navigation functionality
-prevSlide.addEventListener("click", function () {
+prevSlide.addEventListener('click', function () {
   // check if current slide is the first and reset current slide to last
   if (curSlide === 0) {
     curSlide = maxSlide;
