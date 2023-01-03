@@ -1,5 +1,6 @@
 /*General Actions*/ 
 
+/*Action to automátically play the video in a loop*/
 window.addEventListener('load', function(){
   var newVideo = document.getElementById('video');
   newVideo.addEventListener('ended', function() {
