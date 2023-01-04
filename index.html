@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>MercyMo</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="main.css" />
     <script type="text/javascript" src="main.js" defer> </script>
     <script type="text/javascript" src="Header.js"> </script>
     <script type="text/javascript" src="Footer.js"> </script>
@@ -13,112 +14,77 @@
 
 <body>
     <!-- Javascript Header -->
-	<mn-header></mn-header>
+    <mn-header></mn-header>
 
-    <!-- Video -->
-        <div>
-            <video id="video" class="video" >
-                <source src="Media/Test.mp4" type="video/mp4">
-              </video>
+    <!-- --------VIDEO-------- -->
+    <div>
+        <video id="video" class="video">
+            <source src="Media/Test.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <!-- --------CARROUSEL-------- -->
+    <div class="carrousel">
+        <div class="carrouselLogo">
+            <a> Portfolio</a>
+        </div>
+        <!-- Slider container -->
+        <div class="slider">
+            <!-- slide 1 -->
+            <div class="slide">
+                <img src="https://source.unsplash.com/random?landscape,mountain" alt="" />
+            </div>
+
+            <!-- slide 2 -->
+            <div class="slide">
+                <img src="https://source.unsplash.com/random?landscape,cars" alt="" />
+            </div>
+
+            <!-- slide 3 -->
+            <div class="slide">
+                <img src="https://source.unsplash.com/random?landscape,night" alt="" />
+            </div>
+
+            <!-- slide 4 -->
+            <div class="slide">
+                <img src="https://source.unsplash.com/random?landscape,city" alt="" />
+            </div>
+
+            <!-- Control buttons -->
+            <button class="btn btn-next"> &#x2192 </button>
+            <button class="btn btn-prev">&#x2190 </button>
         </div>
 
+    </div>
 
-   <!-- slider container -->
-   <div class="carrousel">
-    <div class="carrouselLogo">
-        <a > Portfolio</a>
-    </div>
-<!-- Slider container -->
-<div class="slider">
-    <!-- slide 1 -->
-    <div class="slide">
-      <img src="https://source.unsplash.com/random?landscape,mountain" alt="" />
-    </div>
-  
-    <!-- slide 2 -->
-    <div class="slide">
-      <img src="https://source.unsplash.com/random?landscape,cars" alt="" />
-    </div>
-  
-    <!-- slide 3 -->
-    <div class="slide">
-      <img src="https://source.unsplash.com/random?landscape,night" alt="" />
-    </div>
-  
-    <!-- slide 4 -->
-    <div class="slide">
-      <img src="https://source.unsplash.com/random?landscape,city" alt="" />
-    </div>
-  
-    <!-- Control buttons -->
-    <button class="btn btn-next"> &#x2192 </button>
-    <button class="btn btn-prev">&#x2190 </button>
-  </div>
+    <!-- End of slider container -->
 
-</div>
-   <!-- End of slider container -->
+    <!-- --------CONTACT FORM-------- -->
 
-   <section id="contact">
-  
-    <h1 class="section-header">Contact</h1>
-    
-    <div class="contact-wrapper">
-    
-    <!-- Left contact page --> 
-      
-      <form id="contact-form" class="form-horizontal" role="form">
-         
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-          </div>
-        </div>
-  
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-          </div>
-        </div>
-  
-        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-        
-        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-          <div class="alt-send-button">
-            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-          </div>
-        
-        </button>
-        
-      </form>
-      
-    <!-- Left contact page --> 
-      
-        <div class="direct-contact-container">
-  
-          <ul class="contact-list">
-            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
-            
-            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-            
-            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
-            
-          </ul>
-  
-          <hr>
-  
-          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-          <hr>
+    <div id="contact">Contact</div>
 
-        </div>
-      
+    <div id="contactForm">
+
+        <h1>Keep in touch!</h1>
+        <small>I'll get back to you as quickly as possible</small>
+
+        <form action="#">
+            <input placeholder="Name" type="text" required />
+            <input placeholder="Email" type="email" required />
+            <input placeholder="Subject" type="text" required />
+            <textarea placeholder="Comment"></textarea>
+            <input class="formBtn" type="submit" />
+            <input class="formBtn" type="reset" />
+        </form>
     </div>
-    
-  </section>  
-    
-    
+
+
+
 
     <!-- JavaScript footer -->
-	<mn-footer></mn-footer>
-    
+    <mn-footer></mn-footer>
+
 </body>
+
 </html>

@@ -1,6 +1,6 @@
-/*General Actions*/ 
+/* ------ GENERAL ACTIONS -------- */
 
-/*Action to automátically play the video in a loop*/
+/* ------ PLAY VIDEO IN LOOP-------- */
 window.addEventListener('load', function(){
   var newVideo = document.getElementById('video');
   newVideo.addEventListener('ended', function() {
@@ -12,7 +12,7 @@ window.addEventListener('load', function(){
 
 });
 
-/* Carrousel Actions*/
+/* ------ CARROUSEL ACTIONS -------- */
 
 "use strict";
 // Select all slides
@@ -64,4 +64,23 @@ prevSlide.addEventListener('click', function () {
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
+});
+
+/* ------ CONTACT FORM ACTION -------- */
+
+$(document).ready(function() {
+  // contact form animations
+  $('#contact').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+  
 });
