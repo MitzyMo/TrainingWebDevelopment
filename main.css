@@ -1,9 +1,10 @@
 /* Imports*/
+@import "https://fonts.googleapis.com/css?family=Raleway";
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-/*------ HEADER CSS--------*/
+/*------ HEADER CSS --------*/
 * {box-sizing: border-box;}
 
 body { 
@@ -134,13 +135,12 @@ body {
 .carrousel{
   display: grid;
   place-items: center;
-  padding-bottom: 5%;
 }
 
 .carrouselLogo {
   text-transform: uppercase;
   padding-top: 5%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
   font-size: 50px;
   font-weight: bold;
 }
@@ -152,7 +152,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  padding-bottom: 5%;
+
 }
 
 .slide {
@@ -173,7 +173,6 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  padding: 10px;
   border: none;
   border-radius: 50%;
   z-index: 10px;
@@ -197,17 +196,20 @@ body {
 }
 
 /*---------- CONTACT FORM -----------*/
+
+h1{ margin: 0; }
 #contact { 
   -webkit-user-select: none; /* Chrome/Safari */        
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+ */
-  margin: 4em auto;
-  width: 400px; 
-  height: 30px; 
+  margin: 10em auto;
+  position: relative;
+  padding: 10px;
+  width: 100%;  
   line-height: 30px;
-  background: rgb(0, 92, 128);
+  background: rgb(0, 0, 0);
   color: white;
-  font-weight: 700;
+  font-size: 40px;
   text-align: center;
   cursor: pointer;
   border: 1px solid white;
@@ -219,12 +221,12 @@ body {
 #contactForm { 
   display: none;
 
-  border: 6px solid salmon; 
+  border: 6px solid rgb(4, 4, 4); 
   padding: 2em;
   width: 400px;
   text-align: center;
   background: #fff;
-  position: fixed;
+  position: relative;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -233,22 +235,23 @@ body {
 }
 
 input, textarea { 
+  padding: 10px;
   margin: .8em auto;
   font-family: inherit; 
   text-transform: inherit; 
-  font-size: inherit;
-  
+  font-size: inherit; 
   display: block; 
   width: 280px; 
   padding: .4em;
+  padding-bottom: 30px;
+  text-align: center;
 }
 textarea { height: 80px; resize: none; }
 
 .formBtn { 
   width: 140px;
   display: inline-block;
-  
-  background: teal;
+  background: rgb(0, 0, 0);;
   color: #fff;
   font-weight: 100;
   font-size: 1.2em;

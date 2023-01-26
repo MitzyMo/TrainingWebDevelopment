@@ -68,7 +68,8 @@ prevSlide.addEventListener('click', function () {
 
 /* ------ CONTACT FORM ACTION -------- */
 
-$(document).ready(function() {
+$(function() {
+  
   // contact form animations
   $('#contact').click(function() {
     $('#contactForm').fadeToggle();
